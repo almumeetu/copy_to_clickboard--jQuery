@@ -66,35 +66,44 @@ h1 {
     transform: scale(0.98);
 }
 
-span .copied {
+span.copied {
     display: block;
     margin-top: 50px;
     text-align: center;
     font-size: 26px;
     color: #858585;
     transition: all 0.5s;
+    transform: scale(0);
 }
-span
- 
+
+span.bounce-effect {
+    animation: bounceIn 0.8s linear;
+}
+
 /* BounceIn Animation */
 @keyframes bounceIn {
     0% {
-        opacity: 0;
+        opacity: 1;
         transform: scale(0.3);
     }
+
     20% {
         transform: scale(1.1);
     }
+
     40% {
         transform: scale(0.9);
     }
+
     60% {
         opacity: 1;
         transform: scale(1.03);
     }
+
     80% {
         transform: scale(0.97);
     }
+
     100% {
         opacity: 1;
         transform: scale(1);
